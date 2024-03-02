@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 using eUseControl.BusinessLogic;
 using eUseControl.BusinessLogic.Interfaces;
 using eUseControl.Domain.Entities.User;
@@ -22,7 +24,7 @@ namespace eUseControl.Web.Controllers
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Index(UserLogin login)
+        public ActionResult Login(UserLogin login)
         {
             if (ModelState.IsValid)
             {
@@ -37,7 +39,10 @@ namespace eUseControl.Web.Controllers
                 var userLogin = _session.UserLogin(data);
                 if (userLogin.Status)
                 {
-                    //ADD COOKIE
+                    HttpCookie cookie = _session.GenCookie(login.Credential);
+                    ControllerContext.HttpContext.Response.Cookies.Add(cookie);
+                    
+                    ModelState.AddModelError("", userLogin.StatusMsg);
 
                     return RedirectToAction("Index", "Home");
                 }
@@ -46,9 +51,8 @@ namespace eUseControl.Web.Controllers
                     ModelState.AddModelError("", userLogin.StatusMsg);
                     return View("Login");
                 }
-
             }
-
+            
             return View("Login");
         }
     }

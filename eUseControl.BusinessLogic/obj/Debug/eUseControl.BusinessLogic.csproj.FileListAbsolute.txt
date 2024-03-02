@@ -10,3 +10,7 @@
 /Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/obj/Debug/eUseControl.BusinessLogic.csproj.CopyComplete
 /Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/obj/Debug/eUseControl.BusinessLogic.dll
 /Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/obj/Debug/eUseControl.BusinessLogic.pdb
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/EntityFramework.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/EntityFramework.SqlServer.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/EntityFramework.xml
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/EntityFramework.SqlServer.xml

@@ -229,3 +229,9 @@ Z:/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Web/obj/Debug/eUseCont
 /Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Web/bin/eUseControl.BusinessLogic.pdb
 /Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Web/bin/eUseControl.BusinessLogic.dll.config
 /Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Web/bin/eUseControl.Domain.pdb
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Web/bin/EntityFramework.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Web/bin/EntityFramework.xml
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Web/bin/EntityFramework.SqlServer.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Web/bin/EntityFramework.SqlServer.xml
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Web/bin/eUseControl.Helpers.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Web/bin/eUseControl.Helpers.pdb

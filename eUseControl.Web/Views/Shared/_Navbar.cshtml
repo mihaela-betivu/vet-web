@@ -1,4 +1,5 @@
-﻿@* @model eUseControl.Web.Models.UserData *@
+﻿@using eUseControl.Web.Models
+@model eUseControl.Web.Models.UserData
 
 <header>
   <div class="header-top-bar">
@@ -14,12 +15,19 @@
         </div>
         <div class="col-lg-6">
           <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
-            <a href="@Url.Action("Login", "Login")" class="text-white mr-2 font-weight-bold">
-              Log in
-            </a>
-            @* <a href="" class="text-white mr-2 font-weight-bold"> *@
-            @*   @Html.DisplayFor(u => u.Username) *@
-            @* </a> *@
+            @if ((string)HttpContext.Current.Session["LoginStatus"] != "login")
+            {
+              <a href="@Url.Action("Login", "Login")" class="text-white mr-2 font-weight-bold">
+                Log in
+              </a>
+            }
+            else
+            {
+              <a href="" class="text-white font-weight-bold">
+                <i class="icofont-ui-user"></i>
+                @Html.DisplayFor(u => u.Username)
+              </a>
+            }
           </div>
         </div>
       </div>
