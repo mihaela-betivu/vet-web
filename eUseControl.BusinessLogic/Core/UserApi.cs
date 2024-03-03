@@ -16,8 +16,7 @@ namespace eUseControl.BusinessLogic.Core
             UDbTable result;
             var validate = new EmailAddressAttribute();
 
-            // var pass = LoginHelper.HashGen(data.Password);
-            var pass = data.Password;
+            var pass = LoginHelper.HashGen(data.Password);
             using (var db = new UserContext())
             {
                 result = db.Users.FirstOrDefault(u => (u.Email == data.Credential || u.Username == data.Credential) && u.Password == pass);
@@ -61,6 +60,39 @@ namespace eUseControl.BusinessLogic.Core
             return new ULoginResp { 
                 Status = true,                     
                 StatusMsg = "Success"
+            };
+        }
+        
+        internal URegisterResp URegisterAction(URegisterData data)
+        {
+            var pass = LoginHelper.HashGen(data.Password);
+            UDbTable insert = new UDbTable
+            {
+                Username = data.Username,
+                Password = pass,
+                Email = data.Email,
+                Level = 1,
+                RegisterDate = DateTime.Now,
+            };
+            int result;
+
+            using (var db = new UserContext())
+            {
+                db.Users.Add(insert);
+                result = db.SaveChanges();
+            }
+
+            if (result == 0)
+            {
+                return new URegisterResp
+                {
+                    Status = false,
+                    StatusMsg = "Datele nu au putut fi salvate"
+                };
+            }
+            return new URegisterResp
+            {
+                Status = true
             };
         }
         

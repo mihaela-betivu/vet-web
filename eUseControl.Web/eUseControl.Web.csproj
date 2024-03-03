@@ -129,6 +129,7 @@
         <Compile Include="Models\BlogData.cs" />
         <Compile Include="Models\UserData.cs" />
         <Compile Include="Models\UserLogin.cs" />
+        <Compile Include="Models\UserRegister.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
