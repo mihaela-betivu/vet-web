@@ -2,6 +2,7 @@
   Layout = "~/Views/Shared/_Layout.cshtml";
   ViewBag.Title = "Blog Detail Page";
 }
+@model eUseControl.Web.Models.BlogData
 
 <section class="page-title bg-1">
   <div class="overlay"></div>
@@ -10,7 +11,7 @@
       <div class="col-md-12">
         <div class="block text-center">
           <span class="text-white">News details</span>
-          <h1 class="text-capitalize mb-5 text-lg">Blog Single</h1>
+          <h1 class="text-capitalize mb-5 text-lg">@Model.SingleBlog detail page.</h1>
         </div>
       </div>
     </div>
@@ -34,7 +35,7 @@
                 </div>
 
                 <h2 class="mb-4 text-md">
-                  <a href="blog-single.html">Healthy environment to care with modern equipment</a>
+                  <a href="blog-single.html">@Model.SingleBlog detail page.</a>
                 </h2>
 
                 <p class="lead mb-4">
@@ -172,7 +173,7 @@
             <form class="comment-form my-5" id="comment-form">
               <h4 class="mb-4">Write a comment</h4>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                   <div class="form-group">
                     <input class="form-control" type="text" name="name" id="name" placeholder="Name:">
                   </div>

@@ -1036,6 +1036,21 @@ a:focus {
   color: #fff;
 }
 
+.nav-logo {
+  width: 70px;
+  height: auto;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+.register-logo {
+  width: 320px;
+  height: auto;
+}
+
 .comment-area .comment-thumb {
   margin-right: 20px;
   margin-bottom: 30px;

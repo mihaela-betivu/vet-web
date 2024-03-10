@@ -9,20 +9,20 @@
   @Styles.Render("~/bundles/slick-carousel/css")
   @Styles.Render("~/bundles/assets/login")
   @Styles.Render("~/bundles/assets/css/style")
-  
+
 </head>
 <body id="top">
 
-    <!--Header-->
-    @Html.Partial("_Navbar")
+<!--Header-->
+@Html.Partial("_Navbar")
 
-    @RenderBody()
+@RenderBody()
 
-    <!--Header-->
-    @Html.Partial("_Footer")
-    
-@Scripts.Render("~/bundles/bootstrap/js")
+<!--Header-->
+@Html.Partial("_Footer")
+
 @Scripts.Render("~/bundles/jquery/js")
+@Scripts.Render("~/bundles/bootstrap/js")
 @Scripts.Render("~/bundles/google-map/js")
 @Scripts.Render("~/bundles/slick-carousel/js")
 @Scripts.Render("~/bundles/shuffle/js")

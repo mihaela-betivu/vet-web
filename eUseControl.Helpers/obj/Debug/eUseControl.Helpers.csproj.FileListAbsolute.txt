@@ -1,0 +1,6 @@
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Helpers/bin/Debug/eUseControl.Helpers.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Helpers/bin/Debug/eUseControl.Helpers.pdb
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Helpers/obj/Debug/eUseControl.Helpers.csproj.AssemblyReference.cache
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Helpers/obj/Debug/eUseControl.Helpers.csproj.CoreCompileInputs.cache
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Helpers/obj/Debug/eUseControl.Helpers.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Helpers/obj/Debug/eUseControl.Helpers.pdb

@@ -36,11 +36,15 @@ namespace eUseControl.Web
             bundles.Add(
                 new ScriptBundle("~/bundles/slick-carousel/js").Include("~/Content/slick-carousel/slick/slick.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/unobtrusive/js").Include(
+                "~/Scripts/jquery.unobtrusive-ajax.min.js"));
+
+            
             //assets - css
             bundles.Add(
                 new StyleBundle("~/bundles/assets/css/style").Include("~/assets/css/style.css",
                     new CssRewriteUrlTransform()));
-
+            
             //assets - js
             bundles.Add(new ScriptBundle("~/bundles/assets/script/js").Include("~/assets/js/script.js"));
             

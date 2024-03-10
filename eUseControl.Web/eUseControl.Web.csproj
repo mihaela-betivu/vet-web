@@ -113,18 +113,21 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="App_Start\BundleConfig.cs"/>
-        <Compile Include="App_Start\FilterConfig.cs"/>
-        <Compile Include="App_Start\RouteConfig.cs"/>
+        <Compile Include="App_Start\BundleConfig.cs" />
+        <Compile Include="App_Start\FilterConfig.cs" />
+        <Compile Include="App_Start\RouteConfig.cs" />
         <Compile Include="Controllers\AppoimentController.cs" />
         <Compile Include="Controllers\BlogController.cs" />
-        <Compile Include="Controllers\HomeController.cs"/>
+        <Compile Include="Controllers\HomeController.cs" />
         <Compile Include="Controllers\LoginController.cs" />
         <Compile Include="Controllers\RegisterController.cs" />
         <Compile Include="Global.asax.cs">
             <DependentUpon>Global.asax</DependentUpon>
         </Compile>
-        <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="Models\BlogData.cs" />
+        <Compile Include="Models\UserData.cs" />
+        <Compile Include="Models\UserLogin.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="assets\css\style.css" />
@@ -159,6 +162,7 @@
         <Content Include="assets\images\blog\testimonial2.jpg" />
         <Content Include="assets\images\favicon.png" />
         <Content Include="assets\images\logo.png" />
+        <Content Include="assets\images\logo\logo-vet.png" />
         <Content Include="assets\images\marker.png" />
         <Content Include="assets\images\service\bg-1.jpg" />
         <Content Include="assets\images\service\service-1.jpg" />
@@ -304,22 +308,24 @@
         <Content Include="Content\slick-carousel\slick\slick.less" />
         <Content Include="Content\slick-carousel\slick\slick.min.js" />
         <Content Include="Content\slick-carousel\slick\slick.scss" />
-        <Content Include="favicon.ico"/>
-        <Content Include="fonts\glyphicons-halflings-regular.svg"/>
-        <Content Include="Global.asax"/>
-        <Content Include="Scripts\bootstrap.js"/>
-        <Content Include="Scripts\bootstrap.min.js"/>
-        <None Include="Scripts\jquery-3.3.1.intellisense.js"/>
-        <Content Include="Scripts\jquery-3.3.1.js"/>
-        <Content Include="Scripts\jquery-3.3.1.min.js"/>
-        <Content Include="Scripts\jquery-3.3.1.slim.js"/>
-        <Content Include="Scripts\jquery-3.3.1.slim.min.js"/>
-        <None Include="Scripts\jquery.validate-vsdoc.js"/>
-        <Content Include="Scripts\jquery.validate.js"/>
-        <Content Include="Scripts\jquery.validate.min.js"/>
-        <Content Include="Scripts\jquery.validate.unobtrusive.js"/>
-        <Content Include="Scripts\jquery.validate.unobtrusive.min.js"/>
-        <Content Include="Scripts\modernizr-2.8.3.js"/>
+        <Content Include="favicon.ico" />
+        <Content Include="fonts\glyphicons-halflings-regular.svg" />
+        <Content Include="Global.asax" />
+        <Content Include="Scripts\bootstrap.js" />
+        <Content Include="Scripts\bootstrap.min.js" />
+        <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+        <Content Include="Scripts\jquery-3.3.1.js" />
+        <Content Include="Scripts\jquery-3.3.1.min.js" />
+        <Content Include="Scripts\jquery-3.3.1.slim.js" />
+        <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+        <None Include="Scripts\jquery.validate-vsdoc.js" />
+        <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+        <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+        <Content Include="Scripts\jquery.validate.js" />
+        <Content Include="Scripts\jquery.validate.min.js" />
+        <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+        <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+        <Content Include="Scripts\modernizr-2.8.3.js" />
         <Content Include="Views\Appoiment\Appoiment.cshtml" />
         <Content Include="Views\Blog\BlogDetails.cshtml" />
         <Content Include="Views\Blog\BlogList.cshtml" />
@@ -327,24 +333,23 @@
         <Content Include="Views\Register\Register.cshtml" />
         <Content Include="Views\Shared\_Footer.cshtml" />
         <Content Include="Views\Shared\_Navbar.cshtml" />
-        <Content Include="Web.config"/>
+        <Content Include="Web.config" />
         <Content Include="Web.Debug.config">
             <DependentUpon>Web.config</DependentUpon>
         </Content>
         <Content Include="Web.Release.config">
             <DependentUpon>Web.config</DependentUpon>
         </Content>
-        <Content Include="Views\Web.config"/>
-        <Content Include="Views\_ViewStart.cshtml"/>
-        <Content Include="Views\Shared\Error.cshtml"/>
-        <Content Include="Views\Shared\_Layout.cshtml"/>
-        <Content Include="Views\Home\About.cshtml"/>
-        <Content Include="Views\Home\Contact.cshtml"/>
-        <Content Include="Views\Home\Index.cshtml"/>
+        <Content Include="Views\Web.config" />
+        <Content Include="Views\_ViewStart.cshtml" />
+        <Content Include="Views\Shared\Error.cshtml" />
+        <Content Include="Views\Shared\_Layout.cshtml" />
+        <Content Include="Views\Home\About.cshtml" />
+        <Content Include="Views\Home\Contact.cshtml" />
+        <Content Include="Views\Home\Index.cshtml" />
     </ItemGroup>
     <ItemGroup>
-        <Folder Include="App_Data"/>
-        <Folder Include="Models"/>
+        <Folder Include="App_Data" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="fonts\glyphicons-halflings-regular.woff2"/>
@@ -354,6 +359,16 @@
         <None Include="packages.config"/>
         <Content Include="Scripts\jquery-3.3.1.slim.min.map"/>
         <Content Include="Scripts\jquery-3.3.1.min.map"/>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\eUseControl.BusinessLogic\eUseControl.BusinessLogic.csproj">
+        <Project>{4bd5c6a5-ca14-4e23-9c43-442391725903}</Project>
+        <Name>eUseControl.BusinessLogic</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\eUseControl.Domain\eUseControl.Domain.csproj">
+        <Project>{4ce8773f-856d-4c44-be03-3cbb809ddca9}</Project>
+        <Name>eUseControl.Domain</Name>
+      </ProjectReference>
     </ItemGroup>
     <PropertyGroup>
         <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

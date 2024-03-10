@@ -1,0 +1,9 @@
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Domain/bin/Debug/eUseControl.Domain.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Domain/bin/Debug/eUseControl.Domain.pdb
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Domain/bin/Debug/eUseControl.Helpers.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Domain/bin/Debug/eUseControl.Helpers.pdb
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Domain/obj/Debug/eUseControl.Domain.csproj.AssemblyReference.cache
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Domain/obj/Debug/eUseControl.Domain.csproj.CoreCompileInputs.cache
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Domain/obj/Debug/eUseControl.Domain.csproj.CopyComplete
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Domain/obj/Debug/eUseControl.Domain.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.Domain/obj/Debug/eUseControl.Domain.pdb

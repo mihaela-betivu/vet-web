@@ -1,0 +1,12 @@
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/eUseControl.BusinessLogic.dll.config
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/eUseControl.BusinessLogic.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/eUseControl.BusinessLogic.pdb
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/eUseControl.Domain.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/eUseControl.Helpers.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/eUseControl.Domain.pdb
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/bin/Debug/eUseControl.Helpers.pdb
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/obj/Debug/eUseControl.BusinessLogic.csproj.AssemblyReference.cache
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/obj/Debug/eUseControl.BusinessLogic.csproj.CoreCompileInputs.cache
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/obj/Debug/eUseControl.BusinessLogic.csproj.CopyComplete
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/obj/Debug/eUseControl.BusinessLogic.dll
+/Users/victor/Desktop/Desk/Tehnologii Web/veterinary-web/eUseControl.BusinessLogic/obj/Debug/eUseControl.BusinessLogic.pdb
