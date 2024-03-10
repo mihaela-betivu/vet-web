@@ -43,6 +43,13 @@ namespace eUseControl.Web
 
             //assets - js
             bundles.Add(new ScriptBundle("~/bundles/assets/script/js").Include("~/assets/js/script.js"));
+            
+            //stiluri pentru register-form   
+            bundles.Add(new StyleBundle("~/bundles/assets/login").Include(
+                "~/assets/login/css/style.css",
+                "~/assets/login/scss/style.css",
+                "~/assets/login/fonts/material-icon/css/material-design-iconic-font.min.css",
+                "~/assets/login/fonts/material-icon/css/material-design-iconic-font.min.css"));
         }
     }
 }

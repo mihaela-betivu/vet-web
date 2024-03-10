@@ -1,0 +1,59 @@
+@{
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main">
+  <!-- Sing in  Form -->
+  <section class="sign-in">
+    <div class="container">
+      <div class="signin-content">
+        <div class="signin-image">
+          <figure>
+            <img src="~/assets/login/images/1_G8HPbru7Uq8Q3L1d-ub2Dw (1).png" alt="sing up image">
+          </figure>
+          <a href="@Url.Action("Register", "Register")" class="signup-image-link">Create an account</a>
+        </div>
+        <div class="signin-form">
+          <h2 class="form-title">Sign up</h2>
+          <div id="login-form">
+            <div class="form-group">
+              <label for="email" class="zmdi zmdi-email">Email</label>
+              <input type="email" name="email" placeholder="Your Email"/>
+            </div>
+            <div class="form-group">
+              <label for="password" class="zmdi zmdi-lock">Password</label>
+              <input type="password" placeholder="Password"/>
+            </div>
+            <div class="form-group">
+              <input name="remember" id="remember" value="remember" type="checkbox" class="agree-term"/>
+              <label for="remember" class="label-agree-term">Remember me</label>
+            </div>
+            <div class="form-group form-button">
+              <input name="signin" value="Log in" type="submit" class="form-submit"/>
+            </div>
+            <div class="social-login">
+              <span class="social-label">Or login with</span>
+              <ul class="socials">
+                <li>
+                  <a href="#">
+                    <i class="display-flex-center zmdi zmdi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="display-flex-center zmdi zmdi-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="display-flex-center zmdi zmdi-google"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

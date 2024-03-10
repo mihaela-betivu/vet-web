@@ -12,9 +12,8 @@
         </div>
         <div class="col-lg-6">
           <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
-            <a href="tel:+23-345-67890">
-              <span>Call Now : </span>
-              <span class="h4">823-4565-13456</span>
+            <a href="@Url.Action("Login", "Login")" class="text-white mr-2 font-weight-bold">
+              Log in
             </a>
           </div>
         </div>
@@ -23,7 +22,7 @@
   </div>
   <nav class="navbar navbar-expand-lg navigation" id="navbar">
     <div class="container">
-      <a class="navbar-brand" href="@Url.Action("Index","Home")">
+      <a class="navbar-brand" href="@Url.Action("Index", "Home")">
         <img src="@Url.Content("~/assets/images/logo.png")" alt="" class="img-fluid">
       </a>
 
@@ -35,7 +34,7 @@
       <div class="collapse navbar-collapse" id="navbarmain">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="@Url.Action("Index","Home")">Home</a>
+            <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -104,18 +103,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="blog-sidebar.html" id="dropdown05" data-toggle="dropdown"
-               aria-haspopup="true" aria-expanded="false">
-              Blog <i class="icofont-thin-down"></i>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown05">
-              <li>
-                <a class="dropdown-item" href="blog-sidebar.html">Blog with Sidebar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="blog-single.html">Blog Single</a>
-              </li>
-            </ul>
+            <a class="nav-link" href="@Url.Action("BlogList", "Blog")">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
