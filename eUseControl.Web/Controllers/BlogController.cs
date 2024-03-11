@@ -10,19 +10,24 @@ namespace eUseControl.Web.Controllers
         {
             
             BlogData b = new BlogData();
+            //cream o lista de bloguri
             b.Blogs = new List<string> { "Blog #1", "Blog #2", "Blog #3", "Blog #4" };
             
+            //trimitem lista in view
             return View("BlogList", b);
         }
 
         public ActionResult BlogDetails()
         {
+            //extragem obiectul din request
             var blog = Request.QueryString["blog"];
 
+            // cream un obiect
             BlogData b = new BlogData();
+            //obiectului creat ii atribuim obiectul din request
             b.SingleBlog = blog;
 
-            
+            //returnam view-ul si trimitem obiectul in view
             return View("BlogDetails", b);
         }
         

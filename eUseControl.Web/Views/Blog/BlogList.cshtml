@@ -2,6 +2,8 @@
   Layout = "~/Views/Shared/_Layout.cshtml";
   ViewBag.Title = "Blog Page";
 }
+
+<!-- specificam ce Model folosim, in cazul dat BlogData -->
 @model eUseControl.Web.Models.BlogData
 
 <section class="page-title bg-1">
@@ -25,6 +27,7 @@
         <div class="row">
           @using (Html.BeginForm("BlogDetails", "Blog", FormMethod.Post, new { autocomplete = "off" }))
           {
+            <!-- afisam lista cu bloguri -->
             foreach (var blog in Model.Blogs)
             {
               <div class="col-lg-12 col-md-12 mb-5">
