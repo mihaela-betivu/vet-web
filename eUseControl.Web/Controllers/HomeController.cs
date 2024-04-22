@@ -17,14 +17,18 @@ namespace eUseControl.Web.Controllers
             {
                 return RedirectToAction("Login", "Login");
             }
-
+            
             var user = System.Web.HttpContext.Current.GetMySessionObject();
             UserData u = new UserData
             {
                 Username = user.Username,
+                Level = user.Level,
             };
 
-            return View(u);
+            ViewBag.username = u.Username;
+            ViewBag.userLevel = u.Level;
+
+            return View();
 
         }
 

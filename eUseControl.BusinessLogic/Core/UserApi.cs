@@ -4,12 +4,13 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using eUseControl.BusinessLogic.DBModel;
+using eUseControl.Domain.Entities.Enums;
 using eUseControl.Domain.Entities.User;
 using eUseControl.Helpers;
 
 namespace eUseControl.BusinessLogic.Core
 {
-    public class UserApi
+    public class UserApi: BlogApi
     {
         internal ULoginResp ULoginAction(ULoginData data)
         {
@@ -35,7 +36,7 @@ namespace eUseControl.BusinessLogic.Core
             {
                 result.LasIp = data.LoginIp;
                 result.LastLogin = data.LoginDateTime;
-                result.Level = 1;
+                result.Level = result.Level;
                 todo.Entry(result).State = EntityState.Modified;
                 try
                 {
@@ -71,7 +72,7 @@ namespace eUseControl.BusinessLogic.Core
                 Username = data.Username,
                 Password = pass,
                 Email = data.Email,
-                Level = 1,
+                Level = 0,
                 RegisterDate = DateTime.Now,
             };
             int result;
@@ -165,7 +166,7 @@ namespace eUseControl.BusinessLogic.Core
                 }
             }
 
-            if (curentUser == null) return null;
+            if (curentUser == null || curentUser.Level == null) return null;
             
             var userminimal = new UserMinimal
             {
@@ -173,7 +174,8 @@ namespace eUseControl.BusinessLogic.Core
                 Username = curentUser.Username,
                 Email = curentUser.Email,
                 LastLogin = curentUser.LastLogin,
-                LasIp = curentUser.LasIp
+                LasIp = curentUser.LasIp,
+                Level = (URole)curentUser.Level
             };
 
             return userminimal;

@@ -45,6 +45,12 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Class1.cs"/>
+        <Compile Include="Entities\Blog\BDbTable.cs" />
+        <Compile Include="Entities\Blog\BlogDetailsData.cs" />
+        <Compile Include="Entities\Blog\BlogDetailsResp.cs" />
+        <Compile Include="Entities\Blog\BlogListData.cs" />
+        <Compile Include="Entities\Blog\BlogListResp.cs" />
+        <Compile Include="Entities\Enums\URole.cs" />
         <Compile Include="Entities\User\Session.cs" />
         <Compile Include="Entities\User\UDbTable.cs" />
         <Compile Include="Entities\User\ULoginData.cs" />

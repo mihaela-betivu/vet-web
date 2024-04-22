@@ -49,7 +49,9 @@
     <ItemGroup>
         <Compile Include="BussinesLogic.cs" />
         <Compile Include="Core\AdminApi.cs" />
+        <Compile Include="Core\BlogApi.cs" />
         <Compile Include="Core\UserApi.cs" />
+        <Compile Include="DBModel\BlogContext.cs" />
         <Compile Include="DBModel\SessionContext.cs" />
         <Compile Include="DBModel\UserContext.cs" />
         <Compile Include="Interfaces\ISession.cs" />

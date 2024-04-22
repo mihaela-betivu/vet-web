@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using eUseControl.Domain.Entities.Enums;
+
 // using eUseControl.Domain.Enums;
 
 namespace eUseControl.Domain.Entities.User
@@ -14,6 +16,6 @@ namespace eUseControl.Domain.Entities.User
         public string Email { get; set; }
         public Nullable<DateTime> LastLogin { get; set; }
         public string LasIp { get; set; }
-        // public URole Level { get; set; }
+        public URole Level { get; set; }
     }
 }

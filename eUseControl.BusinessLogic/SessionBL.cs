@@ -1,6 +1,7 @@
 ﻿using System.Web;
 using eUseControl.BusinessLogic.Core;
 using eUseControl.BusinessLogic.Interfaces;
+using eUseControl.Domain.Entities.Blog;
 using eUseControl.Domain.Entities.User;
 
 namespace eUseControl.BusinessLogic
@@ -22,6 +23,14 @@ namespace eUseControl.BusinessLogic
         public UserMinimal GetUserByCookie(string apiCookieValue)
         {
             return UserCookie(apiCookieValue);
+        }
+        public BlogListResp BlogList(bool isAdmin)
+        {
+            return BlogListAction(isAdmin);
+        }
+        public BlogDetailsResp BlogDetails(int blogId)
+        {
+            return BlogDetailsAction(blogId);
         }
     }
 }

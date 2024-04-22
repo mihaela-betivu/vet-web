@@ -43,7 +43,7 @@ namespace eUseControl.Web.Controllers
                     ControllerContext.HttpContext.Response.Cookies.Add(cookie);
                     
                     ModelState.AddModelError("", userLogin.StatusMsg);
-
+                    
                     return RedirectToAction("Index", "Home");
                 }
                 else
